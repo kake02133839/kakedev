@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suekake web</title>
+    <meta name="description" content="sample text">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./assets/css/sanitize.css"><!--読み込みを最初にしておく-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+ <div class="hero">
+    <strong class="hero-video">Hello Would!
+        My practice</strong><!--storongタグは何か重要なものを強調したいときに使用するタグ。1ページに１個か２個に収めると良い-->
+     <div class="hero-particles" id="particles-js"></div>
+     <video autoplay loop muted preload=""><!--videoタグの中にsourceタグを読み込ませることはよくある.　autoplayは自動で再生してくれる。loopは繰り返し再生してくれる。mutedは無音で再生してくれる。preloadはHTMLが読み込まれたら即座にMP4の読み込みを開始する。-->
+         <source src="assets/videos/hero.mp4" type="video/mp4">
+     </video>
+ </div>
+ 
+
+ <header class="header">
+    <h1 class="header-logo">
+        <a href="#"></a>
+    </h1>
+ </header>
+
+ <section class="section">
+    <h1 class="section-headline">About</h1>
+    <figure class="about">
+        <img class="about-image" src="https://dummyimage.com/600x400/000/fff" alt="about image">
+        <figcaption class="about-caption">
+            <h2 class="about-headline">what we ca do</h2>
+            <p class="about-description">
+                text text text text text text text text text text<br/>
+                text texttext text text text text text text text <br/>
+                text texttext text text text text text text text <br/>
+                text texttext text text text text text text text <br/>
+               <br/>
+                text texttext text text text text text text text text text<br/>
+                text texttext text text text text text text text text text<br/>
+                
+                <br/>
+            </p>
+        </figure>
+ </section>
+
+
+
+
+<!--featureセクション-->
+
+<section class="section section-seconday"><!--何回も同じクラスを拡張させながら使うやり方をすると綺麗に収まる-->
+   <h1 class="section-headline">feature</h1>
+   
+    <ul class="grid grid-col-4">
+        <li class="grid-item">
+          <dl class="feature">
+            <dt class="feature-headline">1.Great Service
+
+            </dt>
+            <dd class="feature-image">
+                <img src="assets/images/001-settings.png" width="100" height="100" art="skill">
+                </dd>
+            <dd class="feature-description">text text text text text text text text text text text text text text text text text text text text text text text text  </dd>
+          </dl>
+        </li>
+        <li class="grid-item">
+
+          <dl class="feature">
+            <dt class="feature-headline">2.high performance</dt>
+                <img src="assets/images/002-product.png" width="100" height="100" art="high performance">
+            <dd class="feature-image">text text text text text text text text text text text text text text text text text text text text text text text text  </dd>
+
+          </dl>
+        </li>
+        <li class="grid-item">
+
+          <dl class="feature">
+            <dt class="feature-headline">3.strong Responsibility</dt>
+                <img src="assets/images/003-feature.png" width="100" height="100" art="strong Responsibility">
+            <dd class="feature-image">text text text text text text text text text text text text text text text text text text text text text text text text  </dd>
+
+          </dl>
+        </li>
+        <li class="grid-item">
+
+          <dl class="feature">
+            <dt class="feature-headline">4.Excekkent Technology</dt>
+                <img src="assets/images/004-feature-1.png" width="100" height="100" art="Excekkent Technology">
+            <dd class="feature-image">text text text text text text text text text text text text text text text text text text text text text text text text  </dd>
+
+          </dl>
+        </li>
+    </ul>
+ </section>
+
+
+
+
+
+    <!--Blogのコーディング-->
+    <section class="section"><!--sectionタグの中では一つレベルが下がる。(h1→→→h2)になるということ-->
+        <h1 class="section-headline">Blog</h1>
+    
+        <ul class="grid grid-col-3">
+             <li class="grid-item">
+                <article class="card"><!--articleは、ひとかたまりで完結するコンテンツを作るときに使う-->
+                    <a href="#" class="card-link">
+                        <span class="card-label">New</span>
+                        <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail"></img>
+                        <div class="card-info">
+                            <time class="card-time" datatime="2025-03-20">2025.03.20</time> 
+                            <h1 class="card-headline>">title text text text text text text text text text text</h1>
+                            <p class="card-description">Text text text text text text text text</p>
+                        </div>
+                        <dl class="avator">
+                            <dt class="avator-name">Seito</dt>
+                            <img class="avator-image" src="https://dummyimage.com/50x50/000/fff" alt="author"></img>
+                        </dl>
+                    </a>
+                </article>
+
+                </li>
+                <li class="grid-item">
+                    <article class="card">
+                        <a href="#" class="card-link">
+                            <span class="card-label">New</span>
+                            <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail"></img>
+                            <div class="card-info">
+                                <time class="card-time" datatime="2025-03-20">2025.03.20</time> 
+                                <h1 class="card-headline>">title text text text text text text text text text text</h1>
+                                <p class="card-description">Text text text text text text text text</p>
+                            </div>
+                            <dl class="avator">
+                                <dt class="avator-name">Seito</dt>
+                                <img class="avator-image" src="https://dummyimage.com/50x50/000/fff" alt="author"></img>
+                            </dl>
+                        </a>
+                    </article>
+    
+                </li>
+                <li class="grid-item">
+                    <article class="card">
+                        <a href="#" class="card-link">
+                            <span class="card-label">New</span>
+                            <img class="card-image" src="https://dummyimage.com/200x100/000/fff" alt="thumbnail"></img>
+                            <div class="card-info">
+                                <time class="card-time" datatime="2025-03-20">2025.03.20</time> 
+                                <h1 class="card-headline>">title text text text text text text text text text text</h1>
+                                <p class="card-description">Text text text text text text text text</p>
+                            </div>
+                            <dl class="avator">
+                                <dt class="avator-name">Seito</dt>
+                                <img class="avator-image" src="https://dummyimage.com/50x50/000/fff" alt="author"></img>
+                            </dl>
+                        </a>
+                    </article>
+        
+                 </li>
+                </ul>
+
+        <div class="section-button">
+             <a href="#" class="button">
+               Blog Page
+             </a>
+        </div>
+             
+    </section>
+
+
+ <section class="section section-seconday">
+        <h1 class="section-headline">Contact</h1> <!--formでボタンを押して送るようなインタラクティブな要素を使う時はバックエンドとの連携が取りやすい-->
+        <form class="form-table" action="">
+            <table class="form-table">
+                    <tr><!--table row 行を作る略-->
+                        <th></th><!--table headline 見出し-->
+                        <td></td><!--table data ひもずく見出しの枠-->
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="Menu">
+                                Menu
+                            </label>
+                        </th>
+                        <td>
+                            <select class="select">
+                                <option value="menu-1">Menu 1</option>
+                                <option value="menu-2">Menu 2</option>
+                                <option value="menu-3">Menu 3</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="name">
+                                name
+                            </label> 
+                        </th>
+                        <td>
+                            <input class="input" type="text" id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email">
+                                email
+                            </label>
+                        </th>
+                        <td>
+                            <input class="input" type="email" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Gender
+                        </th>
+                        <td>
+                            <label class="radio">
+                                <input type="radio" name="Gender" value="male">Male
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="Gender" value="female">female
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="Gender" value="other">other
+                            </label> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="Details">
+                                Details
+                            </label>
+                        </th>
+                        <td>
+                            <textarea class="textarea" cols="40" rows="5">
+                            </textarea>
+                        </td>
+                    </tr>
+             </table>
+
+             <div class="form-button">
+                <button class="button button-submission" type="submit">Subumit</button>
+             </div>            
+        </form>
+ </section>
+
+
+
+
+  <aside class="works"><!--sectionに近い振る舞いを行うタグ。メインではなくメインコンテンツの補助を行うためのタグとなる-->
+    <img src="https://dummyimage.com/150x80/0c0c0f/fdacdc" alt="logo">
+    <img src="https://dummyimage.com/150x80/0c0c0f/fdacdc" alt="logo">
+    <img src="https://dummyimage.com/150x80/0c0c0f/fdacdc" alt="logo">
+    <img src="https://dummyimage.com/150x80/0c0c0f/fdacdc" alt="logo">
+    <img src="https://dummyimage.com/150x80/0c0c0f/fdacdc" alt="logo">
+  </aside>
+
+
+   <footer class="footer">
+    <figure class="footer-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.831946129612!2d139.76448647578775!3d35.6811397725873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1742530602306!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <figcaption class="footer-mapinfo">
+            <div class="footer-maplogo"><!--division（区分・区切り）」の略で、ウェブページのレイアウトや構造を整理するための汎用コンテナ-->
+                kake.s.development
+            </div>
+            <address class="footer-mapaddress">
+                〒100-0000東京駅丸の内1-1-1 <br/>
+                <a href="https://maps.app.goo.gl/TEePa98Hx2tH2J7T7" target="_blank">google map</a><!--trget属性を作ってあげることでクリックしたときに別のタブで字楽ことが可能-->
+            </address>  
+        </figcaption>
+    </figure>
+    <hr class="footer-line" /><!--ラインを作ることができるタグ-->
+    <small class="footer-copy">Copyright ©kake.s.</small><!--copyrightを入れるだけのタグ-->
+     
+  </footer><!--iframeは外部のWeb情報を埋め込む-->
+
+
+
+    <script src="./assets/js/particle.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
+
+
+
+
