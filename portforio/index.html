@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kake.s-Deveropment</title>
+    <meta name="description" content="sample text sample text sample text sample text sample text sample text sample text">
+    <link rel="stylesheet" href="assets/css/sanitize.css">
+    <link rel="stylesheet" href="assets/css/style.css"><!--①最初の読み込み-->
+</head>
+
+<body>
+    <p></p>
+
+ <!--最初の背景の動く動画とテキスト-->
+    <div class="videos">
+        <strong class="hero-text">Kake.s Development</strong>
+            <video class="hero-video" autoplay loop playsinline muted preload="auto">
+                <source src="assets/video/hero-portforio.mp4" type="video/mp4">
+                <div class="videos-particle"></div>
+            </video>
+
+    </div>
+
+ <!--自己紹介-->
+    <section class="section">
+        <h1 class="section-name">About</h1>
+        <figure class="section-headline">
+            <img class="name-img" src="assets/img/self-introduction.png" alt="Self-introduction image">
+        <figcaption class="section-figcaption" >
+            <h2 class="headline"></h2>
+            <p class="headline-name">
+                初めまして。柔道整復師の資格を持ち、現在は大学院で脳波を使用した研究に取り組んでいる末廣翔(すえひろ かける)と申します。<br/>
+                医療施設やスポーツ現場のトレーナーとして仕事し、その中で得た情報を可視化することを目標としています。<br/>
+                <br/>
+                最近はPythonを使ったデータの可視化、Webサイト制作にも挑戦しています。
+                <br/>
+
+             <p class="text-1">~Licence~<br/></p>  
+                柔道整復師.<br/>
+                アスレティックトレーナー.<br/>
+                日本サッカー協会公認2級審判員.<br/>
+                pythonエンジニア 認定試験合格.<br/>
+            </p>
+        </figcaption> 
+        </figure>
+    </section>
+
+
+
+    <section class="section-section-Contact">
+        <h1 class="section-contact">Contact</h1>
+        <form class="section-form" action="https://formsubmit.co/sk0213kake@gmail.com" method="POST"></form>"></form>
+             <table class="section-table"></table>
+                 <div class="form-group">
+                     <label for="name">Name</label>
+                     <input id="name" type="text">
+                 </div>
+                 <div class="form-group">
+                     <label for="mail">Mail</label>
+                     <input id="mail" type="email">
+                 </div>
+                 <div class="form-group">
+                     <label for="tel">Tel</label>
+                     <input id="tel" type="text">
+                 </div>
+                 <div class="form-group">
+                     <label for="textarea">Deteils</label>
+                     <textarea id="Deteils" rows="5"></textarea>
+                 </div>
+                 <div class="form-submit-wrapper">
+                    <button class="form-submit" type="submit">送信</button>
+                 </div>
+                 <input type="hidden" name="_next" value="thanks.html">
+
+                 <!-- 他のオプション -->
+                 <input type="hidden" name="_subject" value="お問い合わせが届きました！">
+                 <input type="hidden" name="_captcha" value="false">
+         </form>
+    </section>
+
+
+ <section class="footer"></section>
+    <footer class="footer-aaa">
+        <figcaption class="mapinfo">
+        <figure class="footer-map">
+            <iframe class="iframe-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.8329436549484!2d135.7561917766241!3d34.98584897281965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600108ae918b02ef%3A0xb61a446e74a21c08!2z5Lqs6YO96aeF!5e0!3m2!1sja!2sjp!4v1742750137938!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+            <address class="footer-map-address">
+                〒500-1234 京都府京都市下京区<br/>
+                <a href="https://maps.app.goo.gl/agiKTwuzbuMuKcZdA" target="_blank" >Google map</a>
+            </address>
+        </figure>
+    </figcaption>
+    <hr class="hooter-line">
+    <small class="footer-small">Kake.s Development</small>
+
+
+    </footer>
+
+    </section>
+ 
+
+
+
+
+ <script src="./assets/js/app.js"></script>
+ <!--jsはheadの後に読み込む必要がある。最初にheadを読み込むためjsが早い段階で来ると読み込みが遅くなる。つまり真っ白な背景だけがしばらく続くためできるだけjsは最後におく。cssは見た目に影響するがjsは見た目に影響しないという点も重要-->
+</body>
+</html>
